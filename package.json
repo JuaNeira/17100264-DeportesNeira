@@ -4,6 +4,7 @@
   "description": "Mi primer proyecto html",
   "main": "index.html\u001b[C",
   "scripts": {
+    "dev": "lite-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/JuaNeira/17100264-DeportesNeira/issues"
   },
-  "homepage": "https://github.com/JuaNeira/17100264-DeportesNeira#readme"
+  "homepage": "https://github.com/JuaNeira/17100264-DeportesNeira#readme",
+  "devDependencies": {
+    "lite-server": "^2.5.4"
+  }
 }
