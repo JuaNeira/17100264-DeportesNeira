@@ -1,0 +1,19 @@
+{
+  "name": "deportesneira",
+  "version": "1.0.0",
+  "description": "Mi primer proyecto html",
+  "main": "index.html\u001b[C",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JuaNeira/17100264-DeportesNeira.git"
+  },
+  "author": "Juan Antonio Neira Jaime",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JuaNeira/17100264-DeportesNeira/issues"
+  },
+  "homepage": "https://github.com/JuaNeira/17100264-DeportesNeira#readme"
+}
