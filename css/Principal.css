@@ -1,0 +1,11 @@
+footer{
+    padding: 10px 20px 0px 20px;
+    background-color: darkgreen;
+    color: white;
+}
+
+.card-desing{
+    flex: 1 250px;
+    padding: 2px 0px 2px 0px;
+    margin: 60px;
+}
