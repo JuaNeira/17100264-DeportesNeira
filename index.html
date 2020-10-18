@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deportes Neira</title>
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+
     <link rel="stylesheet" href="/css/Principal.css">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
@@ -21,7 +22,7 @@
      </style>
 </head>
 <body>
-  <nav class="navbar navbar-dark bg-success sticky-top">
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top" id="navbar">
     <a class="navbar-brand" href="#"><i class="fas fa-dumbbell"></i> Deportes Neira</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -32,16 +33,16 @@
           <a class="nav-link" href="javascript:;" onclick="modInicio();">Inicio <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">  
-          <a class="nav-link" href="formulario.html">Ayuda <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="javascript:;" onclick="modAyuda();">Ayuda <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Noticas</a>
+          <a class="nav-link" href="javascript:;" onclick="modNoticias();">Noticas</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="productos.html">Productos</a>
+          <a class="nav-link" href="javascript:;" onclick="modProductos();">Productos</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#">Inicio de sesion</a>
+          <a class="nav-link" href="javascript:;" onclick="modInicioSesion();">Inicio de sesion</a>
         </li>
         <!-- <li class="nav-item active">
           <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Nosotros</a>
@@ -61,19 +62,19 @@
             <div class="carousel-item active">
                 <img src="https://midevocional.org/wp-content/uploads/2014/05/Baseball1.jpg" class="d-block w-100" alt="..." height="450">
                   <div class="carousel-caption ">
-                    <h1><i class="fas fa-baseball-ball"></i> Deportes Neira - Beisbol  </h1>
+                    <h1><i class="fas fa-baseball-ball"></i> Deportes Neira  </h1>
                   </div>
             </div>
             <div class="carousel-item">
                 <img src="https://images.pexels.com/photos/274506/pexels-photo-274506.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" class="d-block w-100" alt="..." height="450">
                 <div class="carousel-caption">
-                    <h1><i class="fas fa-futbol"></i><!--<img src="img/icon-taco-256.png" width="64" height="64" alt="logo" />--> Deportes Neira - Futbol</h1>
+                    <h1><i class="fas fa-futbol"></i> Deportes Neira</h1>
                 </div>
             </div>
             <div class="carousel-item">
                 <img src="https://www.elnovedades.com.mx/wp-content/uploads/2020/01/UDGTV.jpg" class="d-block w-100" alt="..." height="450">
                 <div class="carousel-caption">
-                    <h1> <i class="fas fa-basketball-ball"></i>Deportes Neira - Basquetbol</h1>
+                    <h1> <i class="fas fa-basketball-ball"></i>Deportes Neira</h1>
                 </div>
             </div>
         </div>
@@ -88,31 +89,11 @@
     </div>
 </section>
 <div class="container" id="contenedor">
-  <div  class = " fila " >
-    <div class="d-flex flex flex-wrap">
-      <div class="d-flex flex-column card-desing justify-content-center">
-        <h2>Productos</h2>
-        <img src="https://sites.google.com/site/haofihki/_/rsrc/1448968525041/home/17610-center-deportes-productos-deportivos.png">
-        <p>En esta pagina encontraras los mejores articulos deportivos a los mejores precios</p>
-        <p><a class="btn btn-secondary" href="productos.html" role="button">ver detalles &raquo;</a></p>
-      </div>
-      <div class="d-flex flex-column card-desing justify-content-center">
-        <h3>Noticias</h3>
-        <img src="https://n24assets.nyc3.digitaloceanspaces.com/2020/06/mlb-regreso-reacciones-jugadores-noticias.jpg">
-        <p>Las noticias mas recientes al alcance de tu mano</p>
-        <p><a class="btn btn-secondary" href="https://www.espn.com.mx/" role="button">Ver detalles &raquo;</a></p>
-      </div>
-      <!-- <div class="d-flex flex-column card-desing justify-content-center">
-        <h3>Nosotros</h3>
-        <p>Pagina de noticias y productos deportivos de Nuevo Laredo.</p>
-        <p><a class="btn btn-secondary" href="./index.html" role="button">Ver detalles &raquo;</a></p>
-      </div> -->
-      </div>
-</div>    
+  
 </div>
  
 
-  <footer>
+  <br><footer>
     <div  class = " fila " >
       <div class="d-flex flex flex-wrap">
         <div  class = " col-sm-4 " style = " font-size: large;" >
@@ -123,13 +104,13 @@
         <div  class = " col-sm-4 " >
           <dirección >
               <h5 ><i class="fas fa-map-marker"></i> Nuestra Ubicación </h5 >
-              <div > PRIVADA LINCOLN </div >
-              <div > Col. S.A.S </div >
-              <div > Nuevo Laredo, Tamaulipas, México </div >
+              <div ><i class="fas fa-map-marked-alt"></i> PRIVADA LINCOLN </div >
+              <div > <i class="fas fa-map-pin"></i> Col. S.A.S </div >
+              <div > <i class="fas fa-globe-americas"></i> Nuevo Laredo, Tamaulipas, México </div >
           </dirección >
         </div >
       <div  class = " col-sm-4 align-items-end " style = "font: large;" >
-          <a  href = "formulario.html" ><i class="fas fa-exclamation"></i> Ayuda </a >
+          <a href="javascript:;" onclick="modAyuda();"><i class="fas fa-exclamation"></i> Ayuda </a >
           
         </div >
         </div>         
@@ -143,28 +124,47 @@
   <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
   <link rel="stylesheet" href="/css/Principal.css">
 
-  <script src="node_modules/jquery//dist/jquery.slim.js"></script>
-  <script src="node_modules/popper.js/dist/umd/popper-utils.min.js"></script>
+  <script src="node_modules/jquery//dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
-  <!-- <script>
-    $(function()
-    {
+  <script>
+    $(function(){
       modInicio();
-      $("[data-toggle2 = 'tooltip']") . tooltip();
+      $("[data-toggle2 = 'tooltip']").tooltip();
       $("[data-toggle='popover']").popover();
       $('.carousel').carousel(
         {
           interval: 5000
-        }
-      )
+        });
     });
     function modInicio(){
       $("#contenedor").empty();
-      $("#contenedor").load("/Pages/Inicio.html:;", function() {
+      $("#contenedor").load("Pages/Inicio.html", function() {
       });
     };
+    function modAyuda(){
+      $("#contenedor").empty();
+      $("#contenedor").load("Pages/Ayuda.html", function() {
+      });
+    };
+    function modProductos(){
+      $("#contenedor").empty();
+      $("#contenedor").load("Pages/Productos.html", function() {
+      });
+    };
+    function modInicioSesion(){
+      $("#contenedor").empty();
+      $("#contenedor").load("Pages/InicioSesion.html", function() {
+      });
+    };
+    function modNoticias(){
+      $("#contenedor").empty();
+      $("#contenedor").load("Pages/Noticias.html", function() {
+      });
+    };
+
   
-  </script> -->
+  </script>
 </body>
 </html>
